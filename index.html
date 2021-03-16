@@ -1,74 +1,84 @@
 <!DOCTYPE html>
-<html
-  lang="en"
-  dir="ltr"
-  itemscope
-  itemtype="https://schema.org/WebPage"
-  prefix="og: http://ogp.me/ns#"
->
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Тестовое задание - Клиника "Кивач"</title>
+<html lang="en" dir="ltr" itemscope itemtype="https://schema.org/WebPage" prefix="og: http://ogp.me/ns#">
 
-   
-    <!-- Security -->
-    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Тестовое задание - Клиника "Кивач"</title>
 
-    <meta name="author" content="Roman Paraskiva" />
-    <meta name="description" content="Тестовое задание" />
-    <meta
-      name="keywords"
-      content="html, html5, css, css3, javascript, js"
-    />
 
-    <meta itemprop="name" content="Тестовое задание - Клиника 'Кивач'" />
-    <meta itemprop="description" content="Тестовое задание - Клиника 'Кивач'" />
+  <!-- Security -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
+  <meta name="author" content="Roman Paraskiva" />
+  <meta name="description" content="Тестовое задание" />
+  <meta name="keywords" content="html, html5, css, css3, javascript, js" />
 
-    <style>
-      /* Critical CSS */
-    </style>
+  <meta itemprop="name" content="Тестовое задание - Клиника 'Кивач'" />
+  <meta itemprop="description" content="Тестовое задание - Клиника 'Кивач'" />
 
-    <link rel="preload" href="./css/style.css" as="style">
-    <link rel="stylesheet" href="./css/style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
 
-    <link rel="preload" href="./script.js" as="script">
-  </head>
+  <script src="https://kit.fontawesome.com/75ae40f7b2.js" crossorigin="anonymous"></script>
 
-  <body>
-    <!-- HTML5 -->
-    <header>
-      
-    </header>
+  <style>
+    /* Critical CSS */
+  </style>
 
-    <main>
-      <div class="form-container">
-        <form>
-          <div class="form__title">
-            <h3>LOGIN</h3>
-          </div>
-        </form>
-      </div>
-    </main>
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css" />
 
-    <footer>
-      <p>
-        &copy; 2020.
-        <a href="https://github.com/harryheman" target="_blank" rel="noopener"
-        >
-          Igor Agapov
-        </a>
-      </p>
-    </footer>
+  <link rel="preload" href="./script.js" as="script">
+</head>
 
-    <script src="./script.js" type="module"></script>
-  </body>
+<body>
+  <main>
+    <div class="form-container">
+      <form action="#">
+        <div class="form__title">
+          <h3>LOGIN</h3>
+        </div>
+        <div class="form__divider"></div>
+        <div class="form__inputs-container">
+          <label for="username">
+            <span>Username:</span>
+            <input required type="text" title="Используйте только латиницу" name="username" pattern="^[a-zA-Z\s]{2,}">
+          </label>
+          <label for="pass">
+            <span>Password:</span>
+            <input required type="password" title="Используйте только цифры, не более 4х" name="password" pattern="[0-9]{1,4}">
+          </label>
+        </div>
+        <div class="form__footer">
+          <input type="checkbox" id="remember" name="remember" value="agree" checked>
+          <label for="remember">Remember me</label>
+          <a href="#">Forgot <i>username</i> or <i>password?</i></a>
+        </div>
+
+        <button class="submit">
+         <i class="fas fa-angle-right"></i>
+          <span>go</span>
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2021.
+      <a href="#" target="_blank" rel="noopener">
+        Roman Paraskiva
+      </a>
+    </p>
+    <p>
+      <a class="font-switcher" href="#">Swith font <i class="fas fa-sync"></i></a>
+    </p>
+  </footer>
+
+  <script src="./script.js" type="module"></script>
+</body>
+
 </html>

@@ -1,7 +1,20 @@
-footer {
-  margin: 0.5rem 0;
-  font-size: 0.9rem;
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  color: #000;
+  font-size: 15px;
 }
+
+footer a{
+  color: #000;
+  font-size: 15px;
+}
+footer a i {
+  margin-left: 10px;
+}
+
 
 footer a {
   text-decoration: none;
