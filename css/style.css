@@ -1,0 +1,31 @@
+/* CSS3 */
+@import './modules/main.css';
+@import './modules/footer.css';
+
+@font-face{
+  font-family: 'Verdana'; 
+  src: url('../assets/fonts/18028.ttf'); 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Verdana', sans-serif;
+  background-image: url('../img/background.png');
+}
+
+@media (max-width: 636px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  main h3 {
+    font-size: 1.5rem;
+  }
+  main li {
+    font-size: 1rem;
+  }
+}
